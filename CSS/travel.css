@@ -178,7 +178,8 @@ option {
     padding-left: 20px;
 }
 
-.popular-tours-description button {
+.popular-tours-description button,
+.deals-discount button {
     font-size: 20px;
     font-weight: 7 00;
     padding: 14px 35px;
@@ -188,71 +189,420 @@ option {
     background-color: rgb(255, 84, 0);
     color: rgb(255, 255, 255);
 }
+
 .popular-tours-images img {
     width: 100%;
 }
 
 /* choose your destination section start */
 
-.choose-your-destination{
+.choose-your-destination {
     margin-top: 100px;
 }
-.destination-title{
+
+.destination-title {
     text-align: center;
 }
-.destination-title h1{
+
+.destination-title h1 {
     font-size: 40px;
     font-weight: 800;
     color: rgb(19, 19, 24);
 }
-.destination-title p{
+
+.destination-title p {
     font-size: 16px;
     line-height: 26px;
     margin-top: 24px;
     color: rgba(19, 19, 24, 0.7);
 }
-.row{
+
+.row {
     margin-top: 50px;
 }
+
 .row-1,
 .row-2,
-.row-3{
+.row-3 {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
 }
-.row-2{
+
+.row-2 {
     margin-top: 1.5rem;
     grid-template-columns: 0.8fr 1fr 0.6fr;
 }
-.row-3{
+
+.row-3 {
     margin-top: 1.5rem;
     grid-template-columns: 0.7fr 1fr;
 }
-.country-card{
+
+.country-card {
     position: relative;
 }
-.country-card img{
+
+.country-card img {
     width: 100%;
     height: 300px;
     filter: brightness(90%);
 }
-.country-card p{
+
+.country-card p {
     font-size: 28px;
     font-weight: 800;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
 }
 
+/* why choose us section start */
 
+.why-choose-us,
+.deals-discount {
+    margin-top: 100px;
+}
+
+.choose-us-description,
+.deals-discount-description {
+    text-align: center;
+}
+
+.choose-us-description h1,
+.deals-discount-description h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(19, 19, 24);
+}
+
+.choose-us-description p,
+.deals-discount-description p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 1.5rem;
+    color: rgba(19, 19, 24, 0.7);
+}
+
+.tour-place {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    padding: 32px 55px 32px 32px;
+    border-radius: 16px;
+    background-color: rgba(251, 181, 99, 0.05);
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 32px;
+    color: rgb(19, 19, 24);
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 16px;
+    color: rgb(90, 90, 93);
+}
+
+.card1 {
+    background-color: rgba(41, 206, 246, 0.05);
+}
+
+.price {
+    max-width: 1170px;
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.card2 {
+    width: 573px;
+    background-color: rgba(233, 68, 68, 0.05);
+}
+
+/* deals and discounts section start */
+
+.main-tour-satorini {
+    background-image: url('../images/Group\ 39.png');
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 16px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tour-satorini {
+    width: 579px;
+    position: absolute;
+    right: 56px;
+    top: 56px;
+    padding: 50px 77px 50px 50px;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.tour-satorini1 {
+    position: absolute;
+    left: 56px;
+}
+
+.tour-satorini h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 1.5rem;
+}
+
+.tour-satorini p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 16px;
+    color: rgb(90, 90, 93);
+}
+
+.management-description {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.time {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.time img,
+.people img,
+.location img {
+    padding-top: 15px;
+}
+
+.time p,
+.people p,
+.location p {
+    font-size: 16px;
+    color: rgb(90, 90, 93);
+}
+
+.people {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.location {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tour-satorini .tour-price {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 1rem;
+    color: rgb(255, 84, 0);
+}
+
+.tour-satorini button {
+    padding: 14px 24px;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    margin-top: 24px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 84, 0);
+}
+
+.packages {
+    max-width: 1170px;
+}
+
+.packages button {
+    display: flex;
+    margin: 50px auto;
+}
+
+/* simple perfect place section start */
+
+.perfect-place {
+    display: flex;
+    gap: 28px;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.place h1 {
+    line-height: 60px;
+}
+
+.perfect-place-video video {
+    border-radius: 16px;
+}
+
+/* news letter section start */
+
+.news-letter {
+    display: flex;
+    margin-top: 100px;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-letter-description {
+    border: 1px solid rgb(255, 84, 0);
+    border-radius: 16px;
+    padding: 40px 40px 53px 40px;
+}
+
+.news-letter-description h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: rgb(19, 19, 24);
+}
+
+.news-letter-description p {
+    line-height: 26px;
+    margin-top: 1rem;
+    color: rgb(90, 90, 93);
+}
+
+hr {
+    width: 393px;
+}
+
+.news-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 200px;
+}
+
+.news-inputs input {
+    font-size: 16px;
+    width: 393px;
+    padding: 16px 251px 16px 20px;
+    color: rgba(19, 19, 24, 0.3);
+    background-color: rgba(19, 19, 24, 0.05);
+}
+
+.news-inputs button {
+    width: 393px;
+    padding: 14px 147px 14px 147px;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 84, 0);
+    font-size: 16px;
+}
+
+.news-letter-images {
+    width: 672px;
+    height: 422px;
+    text-align: center;
+    background-image: url('../images/Rectangle\ 8\ \(1\).png');
+    border-radius: 16px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.head-news {
+    position: absolute;
+    bottom: 50px;
+    right: 8px;
+    border-radius: 16px;
+    width: 324px;
+    height: 120px;
+    padding: 25px 40px;
+    transform: rotate(-19.63deg);
+    background: rgb(255, 84, 0);
+}
+
+.head-news p {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.head-news h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+/* footer section start */
+
+footer{
+    padding: 110px;
+    margin-top: 100px;
+    background-color: rgba(19, 19, 24, 0.05);
+}
+.footer-image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-title{
+    max-width: 100%;
+}
+.footer-title p{
+    text-align: center;
+    margin-top: 1rem;
+    color: rgb(90, 90, 93);
+}
+.hrr{
+    width: 872px;
+    margin-top: 50px !important;
+    margin: auto;
+}
+.icons{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+    gap: 2rem;
+}
+.right{
+    margin-top: 3.2rem !important;
+}
+.right a{
+    font-weight: 600;
+    color: rgb(255, 84, 0);
+    text-decoration: none;
+}
+/* ----footer title end---- */
 
 /* responsive media queary mobile device */
 
 @media screen and (max-width: 576px) {
-    header, .our-popular-tours, .choose-your-destination{
+
+    header,
+    .our-popular-tours,
+    .choose-your-destination,
+    .why-choose-us,
+    .deals-discount,
+    .perfect-place,
+    .news-letter, 
+    .hero-footer {
         padding: 20px;
     }
 
@@ -280,19 +630,55 @@ option {
         display: flex;
     }
 
-    .our-popular-tours {
+    .our-popular-tours,
+    .perfect-place, .news-letter {
         flex-direction: column;
     }
-    .popular-tours-images{
+
+    .popular-tours-images {
         margin-top: 24px;
     }
-    .row-1{
+
+    .row-1 {
         grid-template-columns: 1fr;
     }
-    .row-2{
+
+    .row-2 {
         grid-template-columns: 1fr;
     }
-    .row-3{
+
+    .row-3,
+    .tour-place {
         grid-template-columns: 1fr;
+    }
+
+    .main-tour-satorini {
+        max-width: 550px;
+    }
+
+    .tour-satorini {
+        width: 400px;
+        height: auto;
+        right: 40px;
+        padding: 20px 37px 20px 20px;
+        justify-content: center;
+    }
+
+    .tour-satorini1 {
+        left: 40px;
+    }
+
+    .perfect-place-video video {
+        width: 100%;
+    }
+
+    .perfect-place {
+        margin-top: 0px;
+    }
+    .news-letter-images{
+        width: 100%;
+    }
+    .hrr{
+        width: 100%;
     }
 }
