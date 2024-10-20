@@ -72,7 +72,7 @@ h1 span {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url('../images/Group\ 13\ \(1\)\ \(1\).png');
 }
 
 .explore-travel h1 {
@@ -100,6 +100,7 @@ h1 span {
     align-items: center;
     background: rgba(255, 255, 255, 0.3);
 }
+
 /* .travel-inputs input{
    
     width: 174px;
@@ -108,19 +109,23 @@ h1 span {
 .travel-inputs select{
     padding: 16px;
 } */
- input, select{
+input,
+select {
     width: 175px;
     height: 50px;
     font-size: 16px;
     border: none;
     border-radius: 8px;
     padding: 1rem;
- }
- select, option{
+}
+
+select,
+option {
     font-size: 1rem;
     color: rgba(19, 19, 24, 0.5);
- }
- .travel-inputs button{
+}
+
+.travel-inputs button {
     display: flex;
     gap: 5px;
     align-items: center;
@@ -131,36 +136,98 @@ h1 span {
     border-radius: 8px;
     background-color: rgb(255, 84, 0);
     color: rgb(255, 255, 255);
- }
- .hamburger {
+}
+
+.hamburger {
     display: none;
     margin-right: 20px;
     flex-direction: column;
     cursor: pointer;
-  }
-  
-  .hamburger span {
+}
+
+.hamburger span {
     width: 25px;
     height: 3px;
     background-color: #333;
     margin: 4px;
-  }
+}
 
- @media screen and (max-width: 576px) {
-    .nav-link{
-        display: none;
-    }    
-    .explore-travel h1{
-     font-size: 42px;   
-    }
-   .travel-inputs{
-    margin-bottom: 32px;
-    flex-direction: column;
-   }
-   .travel-inputs input, select, button{
-    width: 300px;
-   }
-   .hamburger {
+/* our popular tours section start */
+
+.our-popular-tours {
+    margin-top: 100px;
     display: flex;
-  }
- }
+    justify-content: space-between;
+}
+
+.popular-tours-description h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(19, 19, 24);
+}
+
+.popular-tours-description p {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(90, 90, 93);
+}
+
+.popular-tours-description ul {
+    padding-left: 20px;
+}
+
+.popular-tours-description button {
+    font-size: 20px;
+    font-weight: 7 00;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 32px;
+    background-color: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+}
+
+.popular-tours-images img {
+    width: 100%;
+}
+
+/* responsive media queary mobile device */
+
+@media screen and (max-width: 576px) {
+    header, .our-popular-tours{
+        padding: 20px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .explore-travel h1 {
+        padding-top: 30px;
+        font-size: 42px;
+    }
+
+    .travel-inputs {
+        margin-bottom: 32px;
+        flex-direction: column;
+    }
+
+    .travel-inputs input,
+    select,
+    button {
+        width: 300px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .our-popular-tours {
+        flex-direction: column;
+    }
+    .popular-tours-images{
+        margin-top: 24px;
+    }
+}
