@@ -1,0 +1,68 @@
+/* some common css style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* nav section start */
+
+nav {
+    display: flex;
+    margin-top: 55px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-title {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+h1 span {
+    margin-left: 10px;
+    color: rgb(255, 84, 0);
+}
+
+.nav-title h1 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.nav-link ul {
+    display: flex;
+    gap: 45px;
+}
+
+.nav-link ul li {
+    list-style: none;
+}
+
+.nav-link ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(66, 66, 71);
+    text-decoration: none;
+}
+
+.nav-link ul li .home {
+    color: rgb(255, 84, 0);
+}
+
+/* banner section start */
+
+.explore-your-travel {
+    border-radius: 16px;
+    margin-top: 50px;
+    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+}
