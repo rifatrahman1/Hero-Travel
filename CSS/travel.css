@@ -64,5 +64,103 @@ h1 span {
 .explore-your-travel {
     border-radius: 16px;
     margin-top: 50px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
 }
+
+.explore-travel h1 {
+    font-size: 64px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+.explore-travel p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.travel-inputs {
+    border-radius: 8px;
+    backdrop-filter: blur (4px);
+    margin-top: 50px;
+    padding: 1rem;
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+}
+/* .travel-inputs input{
+   
+    width: 174px;
+    
+}
+.travel-inputs select{
+    padding: 16px;
+} */
+ input, select{
+    width: 175px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+ }
+ select, option{
+    font-size: 1rem;
+    color: rgba(19, 19, 24, 0.5);
+ }
+ .travel-inputs button{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+ }
+ .hamburger {
+    display: none;
+    margin-right: 20px;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+  }
+
+ @media screen and (max-width: 576px) {
+    .nav-link{
+        display: none;
+    }    
+    .explore-travel h1{
+     font-size: 42px;   
+    }
+   .travel-inputs{
+    margin-bottom: 32px;
+    flex-direction: column;
+   }
+   .travel-inputs input, select, button{
+    width: 300px;
+   }
+   .hamburger {
+    display: flex;
+  }
+ }
